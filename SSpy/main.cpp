@@ -6,9 +6,9 @@
 //Program Name
 #define SVCNAME TEXT("SSpy")
 //Program Description
-#define DESC TEXT("Lepiej uwazac na ten program...")
+#define DESC TEXT("Better watch out for this service...")
 //Program Version
-#define VERSION double(1.27)
+#define VERSION double(0.32)
 
 SERVICE_STATUS          gSvcStatus;
 SERVICE_STATUS_HANDLE   gSvcStatusHandle;
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 		}
 		if (strcmp(argv[1], "version") == 0)
 		{
-			printf("SSpy v%.2f !\nYou can find newest version on www.github.com/wojjan/sspy\nProgram was created by Wojciech Janeczek.", VERSION);
+			printf("SSpy v%.2f !\nYou can find newest version on www.github.com/reqv/sspy\nProgram was created by Wojciech Janeczek.", VERSION);
 			return 0;
 		}
 		if (strcmp(argv[1], "help") == 0 || argc > 2)
